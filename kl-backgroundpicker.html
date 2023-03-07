@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This app helps youtubers pick the best background color for their videos">
+    	<meta name="keywords" content="youtube, background, lights">
+
+		<title>Youtube Background Picker</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/kl-backgroundpicker.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>BACKGROUND  COLOR  CHAMELEON</h1>
+		<main>
+			<img src="chameleon.png" alt="reptile">
+			<section>
+				<section class="sliderContainer">
+					<section class="colorSlider">
+						<label for="r">R</label>
+						<input type="range" min="0" max="255" id="r" step="1" value="0">
+						<output for="r" id="outputR">0</output>
+					</section>  
+					
+					<section class="colorSlider">
+						<label for="g">G</label>
+						<input type="range" min="0" max="255" id="g" step="1" value="0">
+						<output for="g" id="outputG">0</output>
+					</section>
+					
+					<section class="colorSlider">
+						<label for="b">B</label>
+						<input type="range" min="0" max="255" id="b" step="1" value="0">
+						<output for="b" id="outputB">0</output>
+					</section> 
+				</section> 
+					<h2>HEX VALUE:</h2>
+					<output id="hexVal">#000000</output>
+					<h3 id="resetButton">RESET</h3>
+			</section>
+		</main>
+
+		<script type="text/javascript" src="js/kl-backgroundpicker.js"></script>
+	</body>
+</html>

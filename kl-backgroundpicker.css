@@ -1,0 +1,87 @@
+
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main>img{
+  width: 50%;
+  filter: invert(100%);
+}
+.sliderContainer{
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.3);
+}
+
+/******************************************
+/* COLOR SLIDER
+/*******************************************/
+h1{
+  font-size: 50px;
+}
+
+.colorSlider{
+  border: none;
+  padding: 10px 0;
+}
+.colorSlider output{
+  display: inline-block;
+  width: 50px;
+}
+label, output{
+  padding: 4px 10px;
+  color: white;
+  border-radius: 20px;
+  font-size: 30px;
+}
+input[type=range] {
+  width: 200px;
+}
+label[for=r]{
+  color: #f00;
+}
+label[for=g]{
+  color: #0f0;
+}
+label[for=b]{
+  color: #00f;
+}
+#hexVal{
+  padding: 10px;
+  font-size: 3em;
+  background: rgba(255,255,255,.3);
+  color: black;
+}
+#resetButton{
+  padding: 10px;
+  background: rgba(255,255,255,.3);
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 700px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  main>img{
+    width: 60%;
+  }
+}
